@@ -1,6 +1,6 @@
 function load_home () {
 
-    fetch("https://www.emmys.com/" /*, options */)
+    fetch("/" /*, options */)
     .then((response) => response.text())
     .then((html) => {
         document.querySelector("html").innerHTML = html;
