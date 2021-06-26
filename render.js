@@ -1,1 +1,1 @@
-document.write(Date());
+document.querySelector("html").innerHTML = "{Структура сайта}"
