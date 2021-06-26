@@ -11,3 +11,4 @@ function load_home (e) {
     });
 } 
 
+load_home(event);
