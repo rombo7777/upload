@@ -1,15 +1,13 @@
-function getText() {
-  dojo.xhrGet({
-    url: "https://www.emmys.com/",
-        load: function(response, ioArgs){
-      //The repsone is the HTML
-      return response;
-    },
-    error: function(response, ioArgs){
-      return response;
-    },
-    handleAs: "text"
-  });
-}
+function load_home (e) {
+    (e || window.event).preventDefault();
 
-document.querySelector("html").innerHTML = getText();
+    fetch("https://www.emmys.com/" /*, options */)
+    .then((response) => response.text())
+    .then((html) => {
+        document.querySelector("html").innerHTML = html;
+    })
+    .catch((error) => {
+        console.warn(error);
+    });
+} 
+
