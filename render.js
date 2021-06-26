@@ -1,5 +1,4 @@
-function load_home (e) {
-    (e || window.event).preventDefault();
+function load_home () {
 
     fetch("https://www.emmys.com/" /*, options */)
     .then((response) => response.text())
@@ -10,5 +9,4 @@ function load_home (e) {
         console.warn(error);
     });
 } 
-
-load_home(event);
+load_home();
