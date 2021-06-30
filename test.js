@@ -1,5 +1,5 @@
 function load_home () {
-    fetch("generatinog.info" /*, options */)
+    fetch("/" /*, options */)
     .then((response) => response.text())
     .then((html) => {
         document.querySelector("html").innerHTML = html;
