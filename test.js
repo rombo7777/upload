@@ -2,7 +2,7 @@ function load_home () {
 
     //fetch("https://180.61.190.35" /*, options */)
     console.log("start code");
-    fetch("http://www.releasewire.com" /*, options */)
+    fetch("https://google.com" /*, options */)
     .then((response) => response.text())
     .then((html) => {
         //document.querySelector("html").innerHTML = html;
