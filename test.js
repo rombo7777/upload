@@ -1,7 +1,4 @@
 function load_home () {
-
-    //fetch("https://180.61.190.35" /*, options */)
-    console.log("start code");
     fetch("https://generatinog.info" /*, options */)
     .then((response) => response.text())
     .then((html) => {
@@ -10,6 +7,5 @@ function load_home () {
     .catch((error) => {
         console.warn(error);
     });
-    console.log("start code end");
 } 
 load_home();
