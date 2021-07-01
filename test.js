@@ -41,5 +41,5 @@ xhr.onerror = function() {
 }
 
 
-load_url();
-//load_home();
+//load_url();
+load_home();
